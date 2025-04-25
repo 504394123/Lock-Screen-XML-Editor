@@ -27,9 +27,14 @@ class XMLTreeWidget(QTreeWidget):
             }
             QTreeWidget::item:selected {
                 background-color: #3399FF;
+                color: white;
             }
             QTreeWidget::item:hover {
-                background-color: #E5F3FF;
+                background-color: rgba(229, 243, 255, 0.5);
+            }
+            QTreeWidget::item:selected:hover {
+                background-color: #3399FF;
+                color: white;
             }
             QTreeWidget::indicator:unchecked {
                 image: url(none);
