@@ -71,29 +71,3 @@ def delete_element_with_helper(self):
     
     # 使用辅助方法保存状态、执行操作并恢复状态
     self.save_and_restore_tree_state(perform_delete)
-
-"""
-如何集成到您的代码中:
-
-1. 找到处理右键菜单中删除操作的方法
-2. 在删除操作前保存树状态
-3. 执行删除操作
-4. 延迟恢复树状态
-
-如果您使用上下文菜单，代码可能类似:
-
-def contextMenuEvent(self, event):
-    menu = QMenu(self)
-    delete_action = menu.addAction("删除元素")
-    # ... 其他菜单项 ...
-    
-    action = menu.exec_(event.globalPos())
-    if action == delete_action:
-        self.delete_element()  # 使用上面修改过的方法
-
-注意事项:
-
-1. 确保在树状态发生变化的所有操作中都应用相同的保存和恢复逻辑
-2. 如果删除操作会触发树的完全重建，可能需要在主窗口类的update_tree_widget方法中处理
-3. 对于需要确认的删除操作，在用户确认后再保存和恢复状态
-""" 

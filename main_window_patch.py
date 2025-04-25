@@ -67,26 +67,3 @@ def save_and_restore_tree_state(self, callback):
 #         # ...填充树的新内容
 #     
 #     self.save_and_restore_tree_state(perform_action)
-
-"""
-集成步骤:
-
-1. 将tree_state_manager.py文件添加到您的项目中
-2. 在主窗口类文件中导入TreeStateManager和QTimer
-3. 修改update_tree_widget方法如上所示
-4. 可选：添加save_and_restore_tree_state辅助方法
-5. 应用保存状态和恢复状态的逻辑到其他可能影响树视图状态的方法
-
-其他建议:
-
-1. 查找主窗口中所有调用update_tree_widget的地方，确保在需要保留展开状态时
-   传递save_expand_state=True参数
-
-2. 检查是否有其他方法直接操作树视图（如clear()、addTopLevelItem()等），
-   考虑修改这些方法，增加状态保存和恢复逻辑
-
-3. 如果树视图有性能问题，可以考虑以下优化:
-   - 使用平滑滚动: self.tree_widget.setVerticalScrollMode(QTreeWidget.ScrollPerPixel)
-   - 减少不必要的重绘: self.tree_widget.setUpdatesEnabled(False) 和 setUpdatesEnabled(True)
-   - 仅在必要时更新视图: 避免频繁调用update()或repaint()
-""" 

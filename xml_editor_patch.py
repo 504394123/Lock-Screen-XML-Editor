@@ -36,30 +36,3 @@ def delete_elements(self):
     # 使用延迟调用恢复状态，确保UI已完全更新
     QTimer.singleShot(100, lambda: tree_state.restore_state())
 
-
-"""
-修改说明:
-
-1. 将上述代码替换XMLEditorWindow类中现有的delete_elements方法
-2. 确保在文件顶部导入了必要的模块:
-   from tree_state_manager import TreeStateManager
-   from PyQt5.QtCore import QTimer
-3. 将save_expand_state参数设为False，因为我们现在使用自己的状态管理器
-4. 添加延迟恢复机制，确保UI完全更新后再恢复状态
-
-如何应用这个补丁:
-
-1. 打开xml_editor.py文件
-2. 在文件顶部添加导入语句:
-   from tree_state_manager import TreeStateManager
-   from PyQt5.QtCore import QTimer
-3. 找到delete_elements方法并替换为上述代码
-4. 保存文件
-
-这个修改也适用于其他修改树结构的方法，如cut_elements等。
-对于每个会变更树结构的方法，都可以应用相同的模式:
-- 保存状态
-- 执行操作
-- 更新UI
-- 延迟恢复状态
-""" 

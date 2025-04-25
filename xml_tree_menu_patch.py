@@ -73,24 +73,3 @@ class XMLTreeWidget(QTreeWidget):
             
             # 延迟恢复树状态
             QTimer.singleShot(100, lambda: state_manager.restore_state())
-
-"""
-如何应用此补丁:
-
-1. 如果您的XMLTreeWidget类已有contextMenuEvent方法，将其修改为上述代码
-2. 如果没有contextMenuEvent方法，添加上述方法
-3. 添加delete_selected_elements方法
-4. 确保导入了必要的模块
-
-如果您的右键菜单是在其他类中实现的:
-
-1. 找到处理删除操作的相关方法
-2. 使用类似的状态保存和恢复逻辑
-3. 确保在删除操作后使用延迟恢复树状态
-
-调整建议:
-
-1. 删除操作可能需要适应您的应用程序特定逻辑
-2. 确认对话框的消息可以根据您的应用程序需求调整
-3. 如果删除操作会触发更复杂的逻辑，可能需要更细致的状态管理
-""" 

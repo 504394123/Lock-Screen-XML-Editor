@@ -12,7 +12,7 @@
     "expression"
   ],
   "visible": {
-    "功能注释": false,
+    "功能注释": true,
     "作用注释": true,
     "Name值": true
   }
