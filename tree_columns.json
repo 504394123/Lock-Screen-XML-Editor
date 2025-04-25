@@ -1,0 +1,19 @@
+{
+  "default": [
+    "元素",
+    "功能注释",
+    "作用注释",
+    "Name值"
+  ],
+  "custom": [
+    "visibility",
+    "x",
+    "y",
+    "expression"
+  ],
+  "visible": {
+    "功能注释": false,
+    "作用注释": true,
+    "Name值": true
+  }
+}

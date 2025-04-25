@@ -1,0 +1,32 @@
+{
+  "window_geometry": {
+    "width": 3460,
+    "height": 1489,
+    "x": 302,
+    "y": 479
+  },
+  "main_splitter_sizes": [
+    252,
+    3181
+  ],
+  "right_splitter_sizes": [
+    1438,
+    806,
+    927
+  ],
+  "tree_column_widths": [
+    348,
+    96,
+    84,
+    106,
+    125,
+    105,
+    550
+  ],
+  "attr_column_widths": [
+    142,
+    439,
+    215,
+    30
+  ]
+}

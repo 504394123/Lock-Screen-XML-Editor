@@ -1,0 +1,9 @@
+{
+  "默认": {
+    "添加数值": "<!-- 基本动画数值 -->\n<Var name=\"dhht\">\n<VariableAnimation>\n<AniFrame value=\"0\" time=\"0\"/>\n<AniFrame value=\"0\" time=\"200\"/>\n</VariableAnimation>\n</Var>"
+  },
+  "应用组": {
+    "qq": "<!--QQ-->\n<Button x=\"0\" y=\"500\"  w=\"150\" h=\"150\" >\n<Triggers>\n<Trigger action=\"up\">\n<IntentCommand action=\"android.intent.action.MAIN\" package=\"com.tencent.mobileqq\" class=\"com.tencent.mobileqq.activity.SplashActivity\" /> \n<ExternCommand command=\"unlock\" />\n</Trigger>\n</Triggers>\n</Button>"
+  },
+  "常用": {}
+}
